@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JetBet Kenya | 100% Bonus up to KSh 13,000 | Sports & Casino</title>
+  <meta name="description" content="Claim 100% Welcome Bonus up to KSh 13,000 on Sports & Casino. Play Aviator, Jet Crash, Football & more. Instant M-Pesa deposits & withdrawals. Licensed in Kenya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #00c853;
+      --green-dark: #00a844;
+      --dark: #0a0e17;
+      --dark2: #111827;
+      --card: #1a2234;
+      --text: #ffffff;
+      --muted: #94a3b8;
+      --yellow: #fbbf24;
+      --red: #ef4444;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10, 14, 23, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 12px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 900;
+      font-size: 1.5rem;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: var(--green);
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .header-cta {
+      background: var(--green);
+      color: #000;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      transition: 0.2s;
+    }
+
+    .header-cta:hover {
+      background: var(--green-dark);
+      transform: scale(1.03);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 40px 0 50px;
+      background: linear-gradient(180deg, #0f172a 0%, var(--dark) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0,200,83,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0,200,83,0.15);
+      border: 1px solid rgba(0,200,83,0.3);
+      color: var(--green);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.9rem, 6vw, 3rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .hero h1 .highlight {
+      color: var(--green);
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .offer-box {
+      background: linear-gradient(135deg, #1a2234 0%, #0f172a 100%);
+      border: 2px solid var(--green);
+      border-radius: 16px;
+      padding: 24px 20px;
+      max-width: 420px;
+      margin: 0 auto 28px;
+      box-shadow: 0 0 40px rgba(0,200,83,0.2);
+    }
+
+    .offer-label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .offer-amount {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--green);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .offer-desc {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: #000;
+      box-shadow: 0 4px 20px rgba(0,200,83,0.4);
+    }
+
+    .btn-primary:hover {
+      background: var(--green-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0,200,83,0.5);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.2);
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--green);
+      color: var(--green);
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px 24px;
+      margin-top: 32px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .trust-item svg {
+      width: 18px;
+      height: 18px;
+      color: var(--green);
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 50px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.7rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .section-sub {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 32px;
+      font-size: 1rem;
+    }
+
+    /* ===== OFFERS GRID ===== */
+    .offers-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 640px) {
+      .offers-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .offer-card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px 24px;
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .offer-card:hover {
+      border-color: rgba(0,200,83,0.4);
+      transform: translateY(-4px);
+    }
+
+    .offer-card.sports {
+      background: linear-gradient(160deg, #1a2234 0%, #0f1a2e 100%);
+    }
+
+    .offer-card.casino {
+      background: linear-gradient(160deg, #1a2234 0%, #1a1025 100%);
+    }
+
+    .offer-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+
+    .sports .offer-icon {
+      background: rgba(59, 130, 246, 0.15);
+    }
+
+    .casino .offer-icon {
+      background: rgba(168, 85, 247, 0.15);
+    }
+
+    .offer-card h3 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .offer-card .bonus {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .offer-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .offer-features {
+      list-style: none;
+      margin-bottom: 22px;
+    }
+
+    .offer-features li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      color: #cbd5e1;
+    }
+
+    .offer-features li::before {
+      content: '✓';
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    /* ===== POPULAR GAMES ===== */
+    .games-section {
+      background: var(--dark2);
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    @media (min-width: 640px) {
+      .games-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .game-card {
+      background: var(--card);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: 0.2s;
+      text-align: center;
+    }
+
+    .game-card:hover {
+      border-color: var(--green);
+      transform: scale(1.03);
+    }
+
+    .game-img {
+      height: 100px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+    }
+
+    .game-info {
+      padding: 12px 10px;
+    }
+
+    .game-info h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .game-info span {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    /* ===== HOW IT WORKS ===== */
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      counter-reset: step;
+    }
+
+    @media (min-width: 640px) {
+      .steps {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .step {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 24px 20px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.05);
+      position: relative;
+    }
+
+    .step-num {
+      width: 40px;
+      height: 40px;
+      background: var(--green);
+      color: #000;
+      font-weight: 900;
+      font-size: 1.1rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+    }
+
+    .step h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .step p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ===== TRUST ===== */
+    .trust-section {
+      background: var(--dark2);
+      text-align: center;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    @media (min-width: 640px) {
+      .trust-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .trust-box {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px 14px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .trust-box .icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .trust-box h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .trust-box p {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ===== FINAL CTA ===== */
+    .final-cta {
+      text-align: center;
+      padding: 60px 0;
+      background: linear-gradient(180deg, var(--dark) 0%, #0a1628 100%);
+    }
+
+    .final-cta h2 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .final-cta p {
+      color: var(--muted);
+      margin-bottom: 28px;
+      font-size: 1.05rem;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: #060a12;
+      padding: 30px 0 100px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .footer .license {
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    .footer .warning {
+      margin-top: 16px;
+      font-size: 0.75rem;
+      color: #64748b;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+    }
+
+    /* ===== STICKY MOBILE CTA ===== */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(10, 14, 23, 0.97);
+      backdrop-filter: blur(10px);
+      padding: 12px 16px;
+      border-top: 1px solid rgba(0,200,83,0.3);
+      z-index: 200;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .sticky-cta .btn {
+      flex: 1;
+      padding: 14px;
+      font-size: 1rem;
+    }
+
+    .sticky-offer {
+      font-size: 0.8rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .sticky-offer strong {
+      color: var(--green);
+      display: block;
+      font-size: 0.95rem;
+    }
+
+    @media (min-width: 768px) {
+      .sticky-cta {
+        display: none;
+      }
+      .footer {
+        padding-bottom: 30px;
+      }
+    }
+
+    /* Pulse animation for CTA */
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(0,200,83,0.4); }
+      50% { box-shadow: 0 4px 30px rgba(0,200,83,0.7); }
+    }
+
+    .btn-primary {
+      animation: pulse 2s infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-icon">🚀</div>
+        JET<span>BET</span>
+      </div>
+      <a href="https://www.jetbet.co.ke/en/home" class="header-cta" target="_blank" rel="noopener">
+        Claim Bonus
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="badge">🔥 Licensed in Kenya • Instant M-Pesa</div>
+      
+      <h1>
+        Get <span class="highlight">100% Bonus</span><br>
+        up to KSh 13,000
+      </h1>
+      
+      <p class="hero-sub">
+        Sports + Casino Welcome Offer. Play Football, Aviator, Jet Crash & more. Fast M-Pesa payouts.
+      </p>
+
+      <div class="offer-box">
+        <div class="offer-label">Welcome Bonus</div>
+        <div class="offer-amount">100% up to 13,000</div>
+        <div class="offer-desc">On Sports & Casino • Min deposit KSh 99</div>
+      </div>
+
+      <div class="cta-group">
+        <a href="https://www.jetbet.co.ke/en/home" class="btn btn-primary" target="_blank" rel="noopener">
+          🚀 Claim Your Bonus Now
+        </a>
+        <a href="https://www.jetbet.co.ke/en/home" class="btn btn-secondary" target="_blank" rel="noopener">
+          Play Aviator Demo
+        </a>
+      </div>
+
+      <div class="trust-row">
+        <div class="trust-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Licensed BK0001380
+        </div>
+        <div class="trust-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Instant M-Pesa
+        </div>
+        <div class="trust-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          18+ Only
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports & Casino Offers -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Choose Your Offer</h2>
+      <p class="section-sub">Double your first deposit on Sports or Casino</p>
+
+      <div class="offers-grid">
+        <!-- Sports Card -->
+        <div class="offer-card sports">
+          <div class="offer-icon">⚽</div>
+          <h3>Sports Betting</h3>
+          <div class="bonus">100% up to KSh 13,000</div>
+          <p>Bet on Football, Basketball, Tennis & more with boosted odds and live betting.</p>
+          <ul class="offer-features">
+            <li>Premier League, Champions League & Local leagues</li>
+            <li>Live Betting & Cash Out</li>
+            <li>Bet Builder available</li>
+            <li>Daily cashback offers</li>
+          </ul>
+          <a href="https://www.jetbet.co.ke/en/home" class="btn btn-primary" style="width:100%;" target="_blank" rel="noopener">
+            Claim Sports Bonus
+          </a>
+        </div>
+
+        <!-- Casino Card -->
+        <div class="offer-card casino">
+          <div class="offer-icon">🎰</div>
+          <h3>Casino & Crash</h3>
+          <div class="bonus">100% Casino Bonus</div>
+          <p>Play Aviator, Jet Crash, slots and live casino games with your bonus.</p>
+          <ul class="offer-features">
+            <li>Aviator & Jet Crash (high multipliers)</li>
+            <li>Popular slots & free spins games</li>
+            <li>Virtual sports & Jet League</li>
+            <li>Instant wins & fast cashouts</li>
+          </ul>
+          <a href="https://www.jetbet.co.ke/en/home" class="btn btn-primary" style="width:100%;" target="_blank" rel="noopener">
+            Claim Casino Bonus
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Games -->
+  <section class="games-section">
+    <div class="container">
+      <h2 class="section-title">Popular Right Now</h2>
+      <p class="section-sub">Most played games by Kenyan players</p>
+
+      <div class="games-grid">
+        <div class="game-card">
+          <div class="game-img">✈️</div>
+          <div class="game-info">
+            <h4>Aviator</h4>
+            <span>Crash Game</span>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-img">🚀</div>
+          <div class="game-info">
+            <h4>Jet Crash</h4>
+            <span>Crash Game</span>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-img">⚽</div>
+          <div class="game-info">
+            <h4>Football</h4>
+            <span>Sports</span>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-img">🎯</div>
+          <div class="game-info">
+            <h4>JetX</h4>
+            <span>Crash Game</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:28px;">
+        <a href="https://www.jetbet.co.ke/en/home" class="btn btn-primary" target="_blank" rel="noopener">
+          Play Now →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">How to Claim Your Bonus</h2>
+      <p class="section-sub">Takes less than 2 minutes</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Register</h4>
+          <p>Create your free account with your phone number</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Deposit via M-Pesa</h4>
+          <p>Minimum KSh 99. Instant deposit confirmation</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Get 100% Bonus</h4>
+          <p>Bonus credited automatically. Start playing!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="trust-section">
+    <div class="container">
+      <h2 class="section-title">Why Kenyans Choose JetBet</h2>
+      <p class="section-sub">Safe, fast and licensed</p>
+
+      <div class="trust-grid">
+        <div class="trust-box">
+          <div class="icon">🛡️</div>
+          <h4>Licensed</h4>
+          <p>BK0001380 by GRA Kenya</p>
+        </div>
+        <div class="trust-box">
+          <div class="icon">⚡</div>
+          <h4>Fast Payouts</h4>
+          <p>M-Pesa withdrawals in minutes</p>
+        </div>
+        <div class="trust-box">
+          <div class="icon">📱</div>
+          <h4>Mobile First</h4>
+          <p>Works perfectly on any phone</p>
+        </div>
+        <div class="trust-box">
+          <div class="icon">💰</div>
+          <h4>Daily Offers</h4>
+          <p>Cashback & deposit bonuses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Win Big?</h2>
+      <p>Join thousands of Kenyan players already on JetBet</p>
+      <a href="https://www.jetbet.co.ke/en/home" class="btn btn-primary" style="font-size:1.15rem; padding:18px 40px;" target="_blank" rel="noopener">
+        🚀 Claim 100% Bonus Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p><span class="license">Licensed by Gambling Regulatory Authority of Kenya</span> • Licence No. BK0001380</p>
+      <p>Operated by Ah Kum Limited</p>
+      <p class="warning">
+        18+ Only. Gambling can be addictive. Please play responsibly. 
+        This site is for entertainment purposes. Terms & conditions apply to all bonuses.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="sticky-cta">
+    <div class="sticky-offer">
+      <strong>100% Bonus</strong>
+      up to 13,000 KSh
+    </div>
+    <a href="https://www.jetbet.co.ke/en/home" class="btn btn-primary" target="_blank" rel="noopener">
+      Claim Now
+    </a>
+  </div>
+
+</body>
+</html>
